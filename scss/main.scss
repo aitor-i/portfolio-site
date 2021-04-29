@@ -1,5 +1,10 @@
 @import "config";
 @import "home";
+@import "menu";
+@import "about";
+@import "projects";
+@import "contact";
+@import "responsive";
 
 body {
   background-color: $primary-color;
@@ -19,6 +24,9 @@ a {
   color: set-text-color($primary-color);
   text-decoration: none;
   @include transition-ease;
+}
+.text-secondary {
+  color: $secondary-color;
 }
 header {
   position: fixed;

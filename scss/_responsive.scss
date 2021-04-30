@@ -42,12 +42,41 @@
 
 @include media-lg {
   .projects {
-    .contact__list {
-      grid-template-columns: repeat(3, 1fr);
-    }
     &__items {
       grid-template-columns: repeat(3, 1fr);
       width: 150vh;
+    }
+  }
+  .about {
+    .jobs {
+      width: 80vw;
+    }
+  }
+}
+@include media-xl {
+  .about {
+    .jobs {
+      width: 80vw;
+    }
+  }
+}
+
+@include media-xs {
+  .projects {
+    &__items {
+      width: 30vh;
+    }
+    footer {
+      transform: rotate(90deg) translate(-2rem, -4rem);
+      margin: 1rem;
+    }
+  }
+  .about {
+    .jobs {
+      width: 60vw;
+    }
+    footer {
+      transform: rotate(90deg) translate(-2.5rem, -3rem);
     }
   }
 }
